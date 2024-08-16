@@ -4,6 +4,7 @@
     align-items: center;
     background-color: #f4f4f4; /* Light background color for contrast */
     padding: 20px;
+    min-height: 90vh;
 }
 
 .main-content-wrapper {

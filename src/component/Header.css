@@ -20,6 +20,7 @@
     font-family: "Poppins", sans-serif;
     font-size: 2rem; /* Large font size for the title */
     margin: 0 0 10px; /* Add bottom margin for spacing */
+    cursor: pointer;
 }
 
 .header-nav {
