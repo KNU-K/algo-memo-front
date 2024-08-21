@@ -12,7 +12,9 @@ root.render(
         <div className="super-header-wrapper">
             <Header />
         </div>
-        <App />
+        <div className="super-main-wrapper">
+            <App />
+        </div>
         <Footer />
     </React.StrictMode>
 );

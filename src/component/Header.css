@@ -1,31 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
+/* 헤더 스타일 */
 .header {
-    background-color: #333; /* Dark background color for contrast */
+    background-color: #333; /* 다크 배경색 */
     color: white;
-    padding: 20px 0; /* Vertical padding */
-    position: sticky;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px 0; /* 수직 패딩 */
+    position: fixed; /* 고정 위치 */
+    top: 0; /* 페이지 상단 */
+    width: 100%; /* 전체 너비 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 깊이감을 주는 그림자 */
+    z-index: 2; /* 다른 콘텐츠보다 위에 있도록 설정 */
 }
 
 .header-content {
     display: flex;
-    flex-direction: column; /* Stack title and nav vertically */
-    align-items: center; /* Center-align items horizontally */
+    flex-direction: column; /* 제목과 내비게이션을 수직으로 쌓기 */
+    align-items: center; /* 수평 중앙 정렬 */
 }
 
 .header h1 {
+    color: white;
     font-family: "Poppins", sans-serif;
-    font-size: 2rem; /* Large font size for the title */
-    margin: 0 0 10px; /* Add bottom margin for spacing */
+    font-size: 2rem; /* 큰 폰트 크기 */
+    margin: 0 0 10px; /* 하단 여백 추가 */
     cursor: pointer;
 }
 
 .header-nav {
     display: flex;
-    gap: 20px; /* Space between navigation items */
+    gap: 20px; /* 내비게이션 항목 사이의 공간 */
 }
 
 .header-nav a {
@@ -37,5 +40,10 @@
 }
 
 .header-nav a:hover {
-    color: #66a6ff; /* Highlight color on hover */
+    color: #66a6ff; /* 호버 시 강조 색상 */
+}
+
+/* 콘텐츠를 헤더 아래에서 시작하게 하려면 */
+.main-content {
+    padding-top: 80px; /* 헤더 높이만큼 패딩 추가 (헤더 높이 + 여백) */
 }

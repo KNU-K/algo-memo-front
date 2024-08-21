@@ -1,0 +1,72 @@
+h1 {
+    font-size: 32px; /* 제목 크기를 더 키움 */
+    margin-bottom: 30px; /* 여백 증가 */
+    color: #333; /* 어두운 색상 */
+    text-align: center; /* 중앙 정렬 */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* 제목 그림자 효과 */
+}
+
+.form-container {
+    padding: 40px; /* 패딩 추가 */
+
+    width: 100%;
+    max-width: 500px; /* 최대 너비 설정 */
+    background: rgba(255, 255, 255, 0); /* 반투명 흰색 경 */
+    padding: 40px; /* 패딩 증가 */
+}
+
+.group-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 25px; /* 여백 증가 */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555; /* 부드러운 회색 */
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%; /* 너비 100% */
+    padding: 12px 15px; /* 패딩 증가 */
+    border: 1px solid #d1d5db; /* 밝은 회색 테두리 */
+    border-radius: 10px; /* 둥근 모서리 */
+    font-size: 16px; /* 폰트 크기 증가 */
+    transition: border-color 0.3s, box-shadow 0.3s; /* 테두리 색상 변화 효과 */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #3b82f6; /* 포커스 시 테두리 색상 변경 */
+    outline: none; /* 기본 아웃라인 제거 */
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); /* 포커스 시 그림자 추가 */
+}
+
+textarea {
+    resize: none;
+    height: 100px; /* 높이 조정 */
+}
+
+.submit-button {
+    background-color: #2d2d2d; /* 현대적인 파란색 */
+    color: white;
+    padding: 12px 20px; /* 패딩 증가 */
+    border: none;
+    border-radius: 10px; /* 둥근 모서리 */
+    cursor: pointer;
+    font-size: 18px; /* 폰트 크기 증가 */
+    transition: background-color 0.3s, transform 0.3s; /* 배경색과 크기 변화 애니메이션 */
+    width: 530px; /* 버튼 너비 100% */
+}
+
+.submit-button:hover {
+    background-color: #000000; /* 호버 시 색상 변경 */
+    transform: scale(1.05); /* 호버 시 약간 커지는 효과 */
+}
